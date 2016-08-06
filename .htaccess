@@ -1,4 +1,4 @@
-DirectoryIndex index.php index.htm index.html
+DirectoryIndex index.htm index.html index.php
 
 RewriteEngine On
 
