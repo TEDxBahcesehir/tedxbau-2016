@@ -63,13 +63,11 @@ document.getElementsByTagName("body")[0].style.opacity = "0";
 window.onload = function() {
 	document.getElementsByTagName("body")[0].style.animation = "lite 3s ease-in-out 0s 1 normal";
 	document.getElementsByTagName("body")[0].style.opacity = "1";
-	/*
 	$(document).ready(function() {
 		for(i=0;i<vids.length/4;i++)
 			document.getElementById("vidz").innerHTML = vids[i]+"\n"+document.getElementById("vidz").innerHTML;
 		return;
-	})
-	*/;
+	});
 	sp.shuffle();
 	g.shuffle();
 	for(i=0;i<sp.length;i++)
