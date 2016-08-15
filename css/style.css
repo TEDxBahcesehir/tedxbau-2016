@@ -25,7 +25,7 @@ BODY {
 	text-align:center;
 	_animation: starter 3s ease-in-out 1s 1 normal;
 }
-_H2 { text-shadow:-1px -1px 1px firebrick; font-weight:200; }
+H2 { text-shadow:-1px -1px 1px gray; font-weight:200; }
 
 #about [data-hint]:after {
 	width:100% !important;
