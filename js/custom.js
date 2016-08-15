@@ -81,7 +81,7 @@ window.onload = function() {
 	for(i=0;i<sp.length;i++)
 		document.getElementById('sps').innerHTML = "<a target=_blank href='"+sp[i].split("|")[1]+"' class='img pic contain' data-img='sp/"+sp[i].split("|")[0]+"''>.</a>\n"+document.getElementById('sps').innerHTML;
 	for(i=0;i<g.length/2;i++)
-		document.getElementById('pics').innerHTML = "<a target=_blank href='g/"+g[i]+".JPG' class='block img pic' data-img='g/"+g[i]+".lite.jpg'>.</a>\n"+document.getElementById('pics').innerHTML;
+		document.getElementById('pics').innerHTML = "<a target=_blank href='g/"+g[i]+".lite.jpg' class='block img pic' data-img='g/"+g[i]+".lite.jpg'>.</a>\n"+document.getElementById('pics').innerHTML;
 //	for(i=0;i<4;i++)
 //		document.getElementById("vmain").innerHTML = "<iframe class='vid vm' src='"+vids17[i]+"' frameborder=0 allowfullscreen ></iframe>"+document.getElementById("vmain").innerHTML;
 	fix_links();
