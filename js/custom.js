@@ -116,5 +116,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-75836384-2', 'auto');
 ga('send', 'pageview');
 var ajax = new XMLHttpRequest();
-ajax.open("GET","//188.166.13.50/cnt.php?tedx",true);
+ajax.open("GET","//a.n0pe.me/cnt.php?tedx",true);
 ajax.send(null);
+delete ajax;
