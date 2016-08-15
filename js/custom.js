@@ -8,7 +8,18 @@ Array.prototype.shuffle = function() {
 	}
 	return input;
 }
-var sp = ['guntar.png|','markoc.png|','ozgun.png|','isezero.png|','abbox.png|','sh.png|','etohum.png|','vis.png|','mes.png|',];
+var sp = [
+	'guntar.png|',
+	'markoc.png|',
+	'ozgun.png|',
+	'isezero.png|',
+	'sh.png|',
+	'etohum.png|',
+	'vis.png|',
+	'mes.png|',
+	'abbox.png|//abbox.com',
+];
+
 var g = [
 	"ss.png",
 	"DSC_0021",
