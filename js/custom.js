@@ -109,13 +109,7 @@ window.onload = function() {
 	*/
 	return;
 };
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-75836384-2', 'auto');
-ga('send', 'pageview');
 var ajax = new XMLHttpRequest();
-ajax.open("GET","//a.n0pe.me/cnt.php?tedx",true);
+ajax.open("GET","//tedx.analytics.livin.ws/",true);
 ajax.send(null);
 delete ajax;
