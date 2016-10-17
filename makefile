@@ -2,7 +2,6 @@ all:
 	make "updated: $$(date)"
 
 %:
-	make min
 	git add .
 	git commit -am "$@"
 	git push
@@ -24,7 +23,7 @@ push pull:
 pics:
 	ls -1 g/*.lite.jpg | cut -b 3-10 | while read x; do echo "\"$$x\","; done
 
-server:
+serv%:
 	python -m SimpleHTTPServer
 
 # curl -X POST -s --data-urlencode 'input@ready.js' https://javascript-minifier.com/raw > ready.min.js

@@ -67,16 +67,19 @@
 			<tbody id=body ></tbody>
 		</table>
 	</body>
+	<script type="text/javascript" src="./gunzip.min.js" ></script>
 	<script>
 		var noRT = false;
 		function load() {
 			var ajax = new XMLHttpRequest();
-			ajax.responseType = "text";
+			//ajax.responseType = "text";
+			ajax.responseType = "arraybuffer";
 			ajax.addEventListener("load",function() {
 				if(this.status != 200)
 					return;
 				var cnt = 0;
-				eval("var json = [" + ajax.responseText + "];\n");
+				var resp = new TextDecoder("utf-8").decode(new Zlib.Gunzip(new Uint8Array(ajax.response)).decompress());
+				eval("var json = [" + resp + "];\n");
 				json.forEach(function(item,index) {
 					if(item.text.substring(0,2) == "RT" && noRT) return;
 					row = document.createElement("tr");
@@ -135,7 +138,7 @@
 				*/
 				document.getElementById("load").style.visibility = "hidden";
 			});
-			ajax.open("GET","data.json",true);
+			ajax.open("GET","data.json.gz",true);
 			ajax.send(null);
 			document.getElementById("body").innerHTML = "";
 			document.getElementById("load").style.visibility = "visible";
